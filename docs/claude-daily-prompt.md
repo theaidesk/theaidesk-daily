@@ -2,31 +2,48 @@
 
 Copy everything below the line into Claude. Do **not** paste a GitHub token into this prompt.
 
-House rule (same spirit as Karnix): **never push or merge to `main`**. Claude opens a PR; **Architect** and/or **Engineer** review, fix if needed, and merge. Owner does not operate this repo day-to-day. On GitHub use **roles only** — never agent or person display names in commits, PR titles, PR bodies, or review text.
+Public repo ≠ open write access. Anyone can *read* `main` (Buffer). Opening a branch/PR still needs the fine-grained PAT. Architect merges **only** PRs that match the Claude author gate below — not random public PRs.
 
 ---
 
-You are shipping daily AI-news creatives for **theaidesk.io** into the public Buffer media repo.
-
-## Repo
-- https://github.com/theaidesk/theaidesk-daily
-- Brand: theaidesk.io
-- Default branch: `main` (Buffer reads **only** `main` after merge)
+You are shipping daily AI-news creatives for **theaidesk.io** into https://github.com/theaidesk/theaidesk-daily (public media host for Buffer).
 
 ## Auth
-- Use the fine-grained PAT Claude is given for **HTTPS only** (Contents + Pull requests on this repo). Never put the PAT in chat, commits, or files. No SSH. Prefer git + GitHub HTTPS/API over `gh` if the session already has credentials injected.
+Use the fine-grained PAT you were given (HTTPS only, this repo, Contents + Pull requests). Never put the PAT in chat, commits, or files. No SSH. No push/merge to `main`.
 
-## Roles (who does what)
-| Role | Who | Does |
-|---|---|---|
-| Author | Claude (daily job) | Generate assets, commit on a branch, open PR, stop |
-| Review + merge | Architect / Engineer | Review PR, request changes or approve, merge to `main` |
-| Owner | Owner | Supplies news brief / PAT once; not in the merge loop |
+## Roles (GitHub text = roles only)
+| Role | Does |
+|---|---|
+| Author (Claude) | Branch + assets + open PR + stop |
+| Architect / Engineer | Review and merge **only** gated Claude PRs |
+| Owner | News brief + PAT once; not in merge loop |
 
-## Workflow each run (mandatory PR gate)
-1. Pull latest `main`.
-2. Create branch: `posts/YYYY-MM-DD` (Sydney calendar date for the campaign day). Never commit on `main`.
-3. For each scheduled post `N` (1-based), write under:
+Never put seat/agent names in commits, PR titles, bodies, or reviews — roles only (Architect / Engineer / CoS).
+
+## Claude author gate (required on every PR)
+So Architect does not merge stranger PRs, every Claude PR must include **all** of:
+1. Head branch named exactly `posts/YYYY-MM-DD` or `posts/YYYY-MM-DD-post-N` (Sydney date).
+2. Paths only under `posts/YYYY-MM-DD/post-N/` with the required files (below).
+3. PR title: `posts: YYYY-MM-DD (N posts)` (optional `\`-claude\`` suffix is fine).
+4. First line of PR body exactly: `Author: Claude daily` 
+5. Label on the PR: `author/claude` (create the label if missing; if labels fail, keep the body line + branch rule).
+6. Commit author name `Claude daily` and email `claude-daily@theaidesk.io` (local git config for this clone only).
+
+Architect merges only when those match. Random public PRs fail the gate.
+
+## Wake Architect after open
+After the PR is created successfully, post **one** issue comment on that PR with exactly:
+
+```
+@architect review/merge — Claude daily posts ready
+```
+
+(Roles-only ping text; do not name seats.) Then stop. Do not merge yourself.
+
+## Workflow each run
+1. Pull latest `main`. Never commit on `main`.
+2. Branch: `posts/YYYY-MM-DD` (Sydney).
+3. For each post `N` write:
 
 ```
 posts/YYYY-MM-DD/post-N/
@@ -39,17 +56,15 @@ posts/YYYY-MM-DD/post-N/
   threads.json
 ```
 
-4. Never overwrite an existing dated path. If the folder exists, use `post-(N+1)` or a new date folder.
-5. Commit with a clear message, e.g. `posts: YYYY-MM-DD post-N AI daily creatives`.
-6. Push the **branch** over HTTPS (not `main`).
-7. Open a PR into `main` titled `posts: YYYY-MM-DD (N posts)` with a short body: news theme, post count, sample Buffer URLs (after merge).
-8. **Stop.** Do not merge, do not approve your own PR, do not force-push `main`. Wait for Architect/Engineer.
+4. Never overwrite an existing dated path.
+5. Commit as Claude daily / claude-daily@theaidesk.io, e.g. `posts: YYYY-MM-DD post-N AI daily creatives`.
+6. Push the **branch** over HTTPS.
+7. Open PR → `main` with the author-gate title/body/label.
+8. Post the Architect wake comment.
+9. **Stop.**
 
 ## Image rules
-- JPEG, sRGB, quality ~85, under 1MB each
-- Instagram: 1080×1350 (4:5) → `instagram.jpg`
-- X and Threads: 1600×900 → `x.jpg` and `threads.jpg` (may share pixels; still write both files)
-- Captions: `instagram.txt` plain text; `x.json` / `threads.json` with at least `{"text":"..."}`
+JPEG, sRGB, ~85, under 1MB. Instagram 1080×1350 → `instagram.jpg`. X/Threads 1600×900 → `x.jpg` / `threads.jpg`. Captions: `instagram.txt`; `x.json` / `threads.json` with `{"text":"..."}`.
 
 ## manifest.json
 ```json
@@ -58,6 +73,7 @@ posts/YYYY-MM-DD/post-N/
   "post": N,
   "theme": "short theme",
   "status": "ready",
+  "author": "Claude daily",
   "platforms": ["instagram", "threads", "x"],
   "urls": {
     "instagram": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/YYYY-MM-DD/post-N/instagram.jpg",
@@ -66,24 +82,9 @@ posts/YYYY-MM-DD/post-N/
   }
 }
 ```
-Status stays `ready` until after Buffer has published; reviewers may later set `published`.
 
-## After merge (for Buffer)
-Public URLs work only once on `main`:
-
-```
-https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/YYYY-MM-DD/post-N/instagram.jpg
-https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/YYYY-MM-DD/post-N/x.jpg
-https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/YYYY-MM-DD/post-N/threads.jpg
-```
-
-Fallback: `https://cdn.jsdelivr.net/gh/theaidesk/theaidesk-daily@main/posts/YYYY-MM-DD/post-N/instagram.jpg`
-
-Paste into Buffer for Instagram / Threads / X. Keep assets until **7 days after** the scheduled send, then prune.
+## After merge (Buffer)
+URLs work only on `main` (raw.githubusercontent.com or jsDelivr `@main`). Keep assets 7 days past scheduled send, then prune.
 
 ## Input each run
-- News brief / sources for the day
-- How many posts (`N`)
-- Any brand tone notes
-
-Generate images and captions, follow the workflow, end with the **PR link** and Buffer URLs (noting they resolve after Architect/Engineer merge).
+News brief, `N`, tone. End with PR URL + Buffer URLs (valid after Architect/Engineer merge).
