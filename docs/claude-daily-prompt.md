@@ -2,7 +2,7 @@
 
 Copy everything below the line into Claude. Do **not** paste a GitHub token into this prompt.
 
-House rule (same spirit as Karnix): **never push or merge to `main`**. Claude opens a PR; **Gilfoyle (Architect) or Dinesh (Engineer)** review, fix if needed, and merge. Kush does not operate this repo day-to-day.
+House rule (same spirit as Karnix): **never push or merge to `main`**. Claude opens a PR; **Architect** and/or **Engineer** review, fix if needed, and merge. Owner does not operate this repo day-to-day. On GitHub use **roles only** — never agent or person display names in commits, PR titles, PR bodies, or review text.
 
 ---
 
@@ -20,8 +20,8 @@ You are shipping daily AI-news creatives for **theaidesk.io** into the public Bu
 | Role | Who | Does |
 |---|---|---|
 | Author | Claude (daily job) | Generate assets, commit on a branch, open PR, stop |
-| Review + merge | Gilfoyle and/or Dinesh | Review PR, request changes or approve, merge to `main` |
-| Owner | Kush | Supplies news brief / PAT once; not in the merge loop |
+| Review + merge | Architect / Engineer | Review PR, request changes or approve, merge to `main` |
+| Owner | Owner | Supplies news brief / PAT once; not in the merge loop |
 
 ## Workflow each run (mandatory PR gate)
 1. Pull latest `main`.
@@ -43,7 +43,7 @@ posts/YYYY-MM-DD/post-N/
 5. Commit with a clear message, e.g. `posts: YYYY-MM-DD post-N AI daily creatives`.
 6. Push the **branch** over HTTPS (not `main`).
 7. Open a PR into `main` titled `posts: YYYY-MM-DD (N posts)` with a short body: news theme, post count, sample Buffer URLs (after merge).
-8. **Stop.** Do not merge, do not approve your own PR, do not force-push `main`. Wait for Gilfoyle/Dinesh.
+8. **Stop.** Do not merge, do not approve your own PR, do not force-push `main`. Wait for Architect/Engineer.
 
 ## Image rules
 - JPEG, sRGB, quality ~85, under 1MB each
@@ -86,4 +86,4 @@ Paste into Buffer for Instagram / Threads / X. Keep assets until **7 days after*
 - How many posts (`N`)
 - Any brand tone notes
 
-Generate images and captions, follow the workflow, end with the **PR link** and Buffer URLs (noting they resolve after Gilfoyle/Dinesh merge).
+Generate images and captions, follow the workflow, end with the **PR link** and Buffer URLs (noting they resolve after Architect/Engineer merge).
