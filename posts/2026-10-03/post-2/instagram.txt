@@ -1,0 +1,15 @@
+Google's AI answers are meant to save you a trip to other websites. A new study asked what that does to the rest of the web, and to you.
+
+The test: researchers at the University of Pennsylvania and Northeastern recruited 1,100 US adults in March and tracked their Google use.
+
+The finding: people forced into AI Mode were 18.8 percentage points less likely to click through to outside sites. Their reported trust, satisfaction and sense of control dropped too. Turning AI summaries off for others raised clicks by 8.8 points.
+
+The fine print: this is a preprint posted to arXiv on Aug 18, not a Google number. It is one experiment, run in March, and we found no response from Google. "Forced" matters: most people can still use ordinary search.
+
+What it means for you: if you run a site or a small business that depends on search traffic, this is the effect to watch in your own numbers.
+
+Source: arXiv:2608.18352 (Penn and Northeastern), Aug 18
+
+Follow @theaidesk.io for more AI updates!
+
+#Google #AI #AIMode #TechNews #ArtificialIntelligence #TheAIDesk

@@ -1,0 +1,17 @@
+Three people who worked on OpenAI's safety team are out, and the company and the reporting tell it a little differently.
+
+What OpenAI says: it "parted ways with three individuals" after an investigation found they mishandled sensitive information outside established company procedures.
+
+What the Wall Street Journal reports: the three shared confidential details with a third-party AI-safety organization.
+
+What OpenAI also says: its probe found no evidence of a compromise or a vulnerability.
+
+What we can't tell you: what exactly was shared, or how the researchers see it. All of this is the company's own account of its own staffing decision, and no independent check has been published.
+
+Why it matters for non-experts: safety teams are the people who test whether these systems behave. How a company handles disagreement with them is a signal worth tracking. Nothing for you to change today.
+
+Source: OpenAI spokesperson statement via the Wall Street Journal, Oct 1
+
+Follow @theaidesk.io for more AI updates!
+
+#OpenAI #AI #AISafety #TechNews #ArtificialIntelligence #TheAIDesk
