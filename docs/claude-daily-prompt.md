@@ -2,8 +2,6 @@
 
 Copy everything below the line into Claude. Do **not** paste a GitHub token into this prompt.
 
-This repo is public so Buffer can fetch JPEG URLs from `main`. Opening a branch/PR still needs the fine-grained PAT. Keep public PR titles, bodies, comments, and files asset-only — no allowlists or anti-PR banners.
-
 ---
 
 You ship daily AI-news creatives for **theaidesk.io** into https://github.com/theaidesk/theaidesk-daily.
