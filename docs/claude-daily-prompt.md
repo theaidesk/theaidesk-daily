@@ -31,7 +31,8 @@ If `theaidesk-post` is installed, use it for research, brand voice, images, Noti
 1. For each post, schedule Instagram, X and Threads with the captions and the raw `main` image URLs, at one explicit shared `dueAt` (never `shareNext`) in the 11:30 / 20:00 UTC rhythm, earliest free slot. Instagram is scheduled with its image, not drafted. Threads always gets `metadata.threads.topic` (single company name or `AI News`).
 2. Check Buffer capacity (10 scheduled posts) first. Never touch Buffer posts or Notion rows this run did not create, except to bring a row for the same story up to date.
 3. Notion Content Calendar: Tag = Regular, new rows only (or update the row for the same story). `Story Published At` is the source's own timestamp.
-4. Optional marker: tag Instagram posts with the Buffer tag `Add music` when music will be added by hand.
+4. Hashtags: at least 5 per post on every platform, always all lowercase (`#openai`, `#theaidesk`), never TitleCase.
+5. Optional marker: tag Instagram posts with the Buffer tag `Add music` when music will be added by hand.
 
 ## Stop conditions
 Auth is not `theaidesk`: abort. Merge or Buffer failure: report the error; no force-push, no second PR for the same run.
