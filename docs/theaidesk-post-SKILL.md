@@ -1,6 +1,6 @@
 ---
 name: "theaidesk-post"
-description: "Research, write, image, and post daily content for the AI-news brand @theaidesk.io (Instagram, Threads) / @theaideskio (X): verifying claims, generating brand-system images, drafting/scheduling to Buffer, and logging to the Notion Content Calendar. Use this whenever Kush asks for a regular daily AI-news post, or pastes in a rough AI news digest / roundup for an 'AI Daily Signal' post, or mentions theaidesk.io content, Buffer drafts for the AI desk brand, or the Content Calendar. Trigger even if he doesn't say the word 'skill' — a pasted block of AI news bullet points around late morning Sydney time is very likely a Signal-mode request. Revised Oct 2026: hashtags always lowercase; Regular/research runs now commit the images to the GitHub repo as theaidesk, open and squash-merge their own PR, and only then schedule Buffer from the public raw.githubusercontent.com main URLs, with images on Instagram, X and Threads (Instagram scheduled, not drafted); new buffer-from-main mode schedules existing merged assets without research; Threads topic is always set."
+description: "Research, write, image, and post daily content for the AI-news brand @theaidesk.io (Instagram, Threads) / @theaideskio (X): verifying claims, generating brand-system images, drafting/scheduling to Buffer, and logging to the Notion Content Calendar. Use this whenever Kush asks for a regular daily AI-news post, or pastes in a rough AI news digest / roundup for an 'AI Daily Signal' post, or mentions theaidesk.io content, Buffer drafts for the AI desk brand, or the Content Calendar. Trigger even if he doesn't say the word 'skill' — a pasted block of AI news bullet points around late morning Sydney time is very likely a Signal-mode request. Revised Oct 2026: hashtags always lowercase (none on Threads); X and Threads are one short bulleted post with the same text, never a second post; Regular/research runs now commit the images to the GitHub repo as theaidesk, open and squash-merge their own PR, and only then schedule Buffer from the public raw.githubusercontent.com main URLs, with images on Instagram, X and Threads (Instagram scheduled, not drafted); new buffer-from-main mode schedules existing merged assets without research; Threads topic is always set."
 ---
 
 # The AI Desk — daily content pipeline
@@ -107,47 +107,37 @@ applies, and the caveat discipline applies double: when every figure in a story 
 own internal measurement, say so in the post rather than repeating the number as though someone
 had checked it.
 
-**Keep X and Threads short.** Kush asked for this on 29 Aug 2026 and reasserted it on 1 Sep and
-again on 3 Sep. X is normally a **single tweet**; Threads is **one or two posts**. The 5-8 tweet
-structure described below is the reasoning, not the format: fold the news, the mechanism and the
-caveat into the tweet you have rather than spreading them over six. If a digest holds more than
-one story, that is a reason to make it a second post with its own Day number, not a reason to
-lengthen the thread.
+**X and Threads: one short post, the same text, in bullets.** Kush set this on 4 Oct 2026, building on the earlier "keep it short" asks (29 Aug, 1 Sep, 3 Sep). Each of X and Threads gets exactly **one single post, never a second post and never a thread**, and X and Threads carry the **same text** (only the follow-line handle differs: **X is `@theaideskio`, no dot; Threads and Instagram are `@theaidesk.io`**, never swap them). Keep it as short as the Breaking / JUST IN posts, but readable: no long paragraph. Layout:
+
+```
+<one lead line: what changed, plain words>
+
+• <key fact>
+• <key fact, or the mechanism>
+• <the caveat: vendor claim vs verified, or what we could not confirm>
+
+Source: <name, date>
+
+Follow @theaideskio for more AI updates!
+```
+
+Two to three bullets, one short line each. The last bullet is the trust bullet (own number vs verified, one study vs a verdict, or "nothing to do yet"). If it runs long, cut a bullet or tighten the words; never spill into a second post. A digest with more than one story is still a reason for a second Day number, not a longer post.
 
 **Length is not optional to check by eye.** Count characters in Python before posting:
 ```python
-for i, t in enumerate(tweets, 1):
-    assert len(t) <= 280, f"tweet {i} is {len(t)} chars"
+assert len(x_text) <= 280, f"X post is {len(x_text)} chars"
+assert len(threads_text) <= 500, f"Threads post is {len(threads_text)} chars"
 ```
-X tweets must stay ≤280 characters each (this account isn't confirmed to have extended limits — don't assume it does), **hashtags included** — the count above has to cover the whole tweet, not just the news sentence. Threads posts should stay under ~500 characters each, same rule. A tweet that's 1 character over will get rejected or truncated by the platform later; catch it now.
+X must stay at or under 280 characters (this account isn't confirmed to have extended limits), counted over the whole post including bullets, Source, Follow line and any hashtags. A post that is 1 character over gets rejected or truncated later; catch it now.
 
-**Every post, on every platform and in every mode, carries at least 5 hashtags.** Kush asked for this on 12 Sep 2026 — Instagram, X and Threads all need it, Research/Signal/Breaking alike. Put them on their own line at the very end, after the Follow line, with a blank line before them: a mix of one or two broad tags (`#ai`, `#technews`, `#artificialintelligence`), one or two story-specific ones (the company or product name, e.g. `#openai`, `#anthropic`), and a brand tag (`#theaidesk`, or `#aidailysignal` for Signal mode). **Hashtags are always all lowercase, never TitleCase or camelCase** (Kush asked for this on 4 Oct 2026): write `#openai`, `#theaidesk`, `#chatgptpro`, `#aimode`, not `#OpenAI`, `#TheAIDesk`, `#ChatGPTPro`. Check every hashtag line for capitals before posting. Five is a floor, not a target — add more where they're genuinely relevant, never pad with generic tags that don't fit the story.
+**Hashtags (revised 4 Oct 2026).** All hashtags are **always all lowercase, never TitleCase or camelCase**: write `#openai`, `#theaidesk`, `#chatgptpro`, `#aimode`, not `#OpenAI`, `#TheAIDesk`, `#ChatGPTPro`. Check every hashtag line for capitals before posting.
+- **Instagram:** at least 5 hashtags, on their own line at the very end after the Follow line, with a blank line before: one or two broad tags (`#ai`, `#technews`, `#artificialintelligence`), one or two story-specific ones (`#openai`, `#anthropic`), and a brand tag (`#theaidesk`, or `#aidailysignal` for Signal mode). Five is a floor; never pad with tags that don't fit the story.
+- **Threads: no hashtags at all.**
+- **X:** same text as Threads. A lowercase hashtag line is optional and only when it fits inside the 280 characters; never trade a bullet or the Source line for hashtags.
 
-Hashtags count toward the character caps above, and a single 280-character tweet carrying the news, the caveat, a Source line, a Follow line and 5+ hashtags is a tight fit. When it doesn't fit in one tweet, that's a legitimate reason to go to two: keep the news itself as tweet 1, and put Source + Follow + the hashtag line in a short tweet 2 — this is on top of, not instead of, the existing "X is normally a single tweet" guidance; use the second tweet only when the hashtags genuinely don't fit, not as a default. Threads' existing "one or two posts" allowance already has the room for this and usually needs no change.
+**Instagram layout.** The caption keeps the warmer, fuller register, but uses short paragraphs and `•` bullets for the key facts and the caveat instead of one dense block, then the Source line, the Follow line and the hashtag line, each separated by a blank line.
 
-**Never fold the sign-off into one dense closing paragraph.** Kush flagged on 12 Sep 2026 that
-posts were shipping as a single undifferentiated block of text with the source and the follow
-line buried mid-sentence. Every Instagram caption, and the last post of every X/Threads thread,
-ends with several visually separate lines — a blank line before each:
-
-```
-<the body copy, as many lines/paragraphs as the platform's register calls for>
-
-Source: <name of the source, and a link if you have one>
-
-Follow @theaideskio for more AI updates!
-
-#hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5
-```
-
-The follow line always reads "Follow @<handle> for more AI updates!" with the platform's own
-handle dropped in — `@theaideskio` on the X post (X handles can't contain dots), `@theaidesk.io`
-on the last Threads post and on the Instagram caption. This replaces the old flat "ends with the
-handle" sign-off below; the handle rule itself hasn't changed, only that it's now its own line
-below its own Source line, with the hashtag line below that, rather than everything tacked onto
-the last sentence. Breaking-mode posts get the Source and Follow lines too, even though they skip
-Instagram — when the body already cited the one primary artifact the whole post rests on, the
-Source line can just repeat that reference rather than inventing a second one.
+**Never fold the sign-off into one dense closing paragraph.** Every post (Instagram caption, X post, Threads post) ends with visually separate lines, a blank line before each: the Source line, then the Follow line (then, on Instagram only, the hashtag line). The follow line always reads "Follow @<handle> for more AI updates!" with the platform's own handle: `@theaideskio` on X (X handles can't contain dots), `@theaidesk.io` on Threads and Instagram. Breaking-mode posts get the Source and Follow lines too; when the body already cited the one primary artifact the whole post rests on, the Source line can repeat that reference.
 
 **Threads gets a topic tag — nothing else does.** Buffer's Threads metadata carries
 `metadata.threads.topic`, a short 1-3 word category string Meta surfaces on the post for
@@ -157,7 +147,7 @@ or `"AI News"` for a multi-company roundup, a Signal-mode digest, or anything wi
 subject. X and Instagram have no equivalent Buffer field — don't go looking for a "topic" to set
 on those two.
 
-**Write like a person explaining this to a friend, not like a press release compressed to fit.** A first-pass draft (yours or a pasted digest) tends to read as AI-dumped: jargon left untranslated (throughput-per-watt, single-turn workload, HBM4, unseen-task success rate), near-identical wording just trimmed to different lengths across platforms, and every sentence at the same dense weight. Fix both. Translate technical terms into what they mean for a non-technical reader — "1.5–1.9x more work per watt" becomes "roughly 50 to 90% more work for the same amount of power"; a benchmark suite name becomes "a simpler test than the one they'd normally use." And give each platform an actually different register, not the same paragraph at three lengths: X is terser and more matter-of-fact, Threads is more conversational, Instagram is the warmest and most narrative — it can open on a real hook sentence ("Three things happened this week that quietly matter more...") rather than restating the news dryly. Re-read your own draft once before posting and ask whether it sounds like it was dumped from a model or written by someone who actually understood the story — if the former, rewrite it, don't just trim it.
+**Write like a person explaining this to a friend, not like a press release compressed to fit.** A first-pass draft (yours or a pasted digest) tends to read as AI-dumped: jargon left untranslated (throughput-per-watt, single-turn workload, HBM4, unseen-task success rate), near-identical wording just trimmed to different lengths across platforms, and every sentence at the same dense weight. Fix both. Translate technical terms into what they mean for a non-technical reader — "1.5–1.9x more work per watt" becomes "roughly 50 to 90% more work for the same amount of power"; a benchmark suite name becomes "a simpler test than the one they'd normally use." X and Threads now share one short bulleted text, so the register difference lives between that post and Instagram, which is the warmest and most narrative — it can open on a real hook sentence ("Three things happened this week that quietly matter more...") rather than restating the news dryly. Re-read your own draft once before posting and ask whether it sounds like it was dumped from a model or written by someone who actually understood the story — if the former, rewrite it, don't just trim it.
 
 ## Step 4 — Generate the images (image system v2)
 
@@ -281,6 +271,10 @@ Org "My Organization", id `6a8a5f25d83063529f26ab69`. Re-verify channel IDs with
 - Instagram: `6a8a6114ccaf649a67fb8eda`
 
 **Order and images (revised).** Step 5 runs only after the merge in Step 4b (or from `main` in buffer-from-main mode). Every post gets its image on all three platforms, attached by URL: `assets: [{image: {url: "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/YYYY-MM-DD/post-N/<platform>.jpg", metadata: {altText: "..."}}}]` with `instagram.jpg` on Instagram, `x.jpg` on X and `threads.jpg` on Threads. Buffer accepts remote image URLs, so Instagram is scheduled normally, not drafted. The older text-only and draft-Instagram instructions below apply only to Signal and Breaking modes or when the raw URLs cannot be fetched. Every Threads post still gets `metadata.threads.topic` set (single company name or `"AI News"`); never omit it.
+
+**Single post on X and Threads (revised 4 Oct 2026):** send one `text` with no `metadata.twitter.thread` / `metadata.threads.thread` array; never create a second post or thread item. Threads still gets `metadata.threads.topic`. Everything in the thread-item wording below applies only to legacy multi-item posts.
+
+**Single post on X and Threads (revised 4 Oct 2026):** send one `text` with no `metadata.twitter.thread` / `metadata.threads.thread` array; never create a second post or thread item. Threads still gets `metadata.threads.topic`. The X post's Follow line uses `@theaideskio`; the Threads post's uses `@theaidesk.io`. Everything in the thread-item wording below applies only to legacy multi-item posts.
 
 **X and Threads** schedule cleanly, text-only in the legacy path: `create_post` with `mode: "customScheduled"`, `schedulingType: "automatic"`, an explicit `dueAt`, outer `text` matching the first thread item exactly, and every thread item under `metadata.{twitter,threads}.thread`. On the Threads side, also set `metadata.threads.topic` per Step 3 (single company name, or `"AI News"`) — every Threads post needs it, in every mode.
 
