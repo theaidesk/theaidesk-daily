@@ -19,7 +19,7 @@ If `theaidesk-post` is installed, use it for research, brand voice, images, Noti
 ## Phase A: research, assets, PR
 1. Research the day's top N (at most 2, per the skill floor) Regular AI stories and generate the creatives.
 2. Pull `main`. Branch `posts/YYYY-MM-DD` (Sydney date; if taken, `posts/YYYY-MM-DD-HHMM`). Never commit on `main`; never use a branch name starting with `claude/`.
-3. Write `posts/YYYY-MM-DD/post-N/{manifest.json,instagram.jpg,x.jpg,threads.jpg,instagram.txt,x.json,threads.json}`. JPEG sRGB about q85 under 1 MB; Instagram 1080x1350, X and Threads 1600x900. Never overwrite an existing dated path.
+3. Render the images to JPEG with `python3 scripts/render_posts.py spec.json OUT_DIR` from the repo (docstring has the spec format). Write `posts/YYYY-MM-DD/post-N/{manifest.json,instagram.jpg,x.jpg,threads.jpg,instagram.txt,x.json,threads.json}`. JPEG sRGB about q85 under 1 MB; Instagram 1080x1350, X and Threads 1600x900. Never overwrite an existing dated path.
 4. Commit as `theaidesk`, push the branch, open one PR into `main` titled `posts: YYYY-MM-DD (N posts)` with a short neutral body.
 5. Do not touch Buffer yet.
 

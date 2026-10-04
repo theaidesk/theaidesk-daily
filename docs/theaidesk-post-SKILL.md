@@ -249,7 +249,9 @@ the story's subject over ones that are a detail in the copy.
 **Crop-check every render before calling it final** — the script/headline seam, the frame edges,
 the bottom margin, and that nothing that matters sits below row 1215 on the 1080x1350 canvas.
 
-Deliver all PNGs with `SendUserFile` (`proactive` for scheduled runs, `normal` in live chat).
+**Render to JPEG with the repo script (tested 4 Oct 2026).** Python Playwright is not installed in the cloud sandbox, and `references/render_example.py` writes PNGs, so for Regular/research runs use `scripts/render_posts.py` from the `theaidesk-daily` repo instead: `python3 scripts/render_posts.py spec.json OUT_DIR`. `spec.json` is a list of `{"out": "post-N/instagram.jpg", "mode": "hook"|"thread", "params": {...}}` jobs using the same params as `build()`. It builds the HTML, screenshots with Node Playwright and Chromium, fetches fonts with npm, and writes sRGB JPEGs (about q85, 1080x1350 for Instagram, 1600x900 for X and Threads, each asserted under 1 MB). Write them straight into `posts/YYYY-MM-DD/post-N/` as `instagram.jpg`, `x.jpg` and `threads.jpg`. Remember the thread-mode rules above and crop-check every render with the Read tool before committing.
+
+Deliver the final JPEGs with `SendUserFile` (`proactive` for scheduled runs, `normal` in live chat).
 
 ## Step 4b — Commit, PR and self-merge (Regular/research runs only)
 
