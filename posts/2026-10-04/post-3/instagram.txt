@@ -1,0 +1,15 @@
+Two McDonald's restaurants, two miles apart. One charged $5.69 for a Big Mac. The other charged $6.89.
+
+Reuters reports that McDonald's runs an AI pricing tool that recommends menu prices for nearly 14,000 US restaurants. It looks at millions of daily transactions, what customers around each store seem willing to pay, and what Wendy's and Burger King charge nearby. In Fresno, that gap came to 21%.
+
+Here's the honest part. Reuters says it did not establish that the tool caused the difference. McDonald's calls the tool "a tool, not a mandate," says owners set their own prices, and called the reporting "speculative and uninformed." Five owners told Reuters they felt pressured to follow it, and a franchisee document reportedly shows the company records when owners deviate. That is their account, and McDonald's disputes it.
+
+One more thing worth knowing: this is store-level pricing, not a price built around you personally.
+
+Our read: nothing to do today. But the number on the menu board may be a model's estimate of what your neighbourhood will pay, and now you know to notice.
+
+Source: Reuters investigation, September 30 2026, as reported by The Next Web and Engadget.
+
+Follow @theaidesk.io for more AI updates!
+
+#AI #TechNews #McDonalds #Pricing #ArtificialIntelligence #Reuters #TheAIDesk

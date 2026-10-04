@@ -1,0 +1,13 @@
+Every phone, laptop and AI data centre runs on memory chips, and one of the biggest makers just said there won't be enough of them for years.
+
+On September 30, Micron reported its fiscal fourth quarter. Revenue was about $54.2 billion, up from $11.3 billion a year earlier, and for the full year $133.2 billion, up from $37.4 billion. It expects roughly $61.5 billion next quarter. CEO Sanjay Mehrotra told investors that "in calendar 2027 as well as 2028, we see demand exceeding supply," that he has no line of sight to when the two return to balance, and that customers will pay "much higher prices" than this year.
+
+Here's the honest part. The revenue figures are reported results. The 2028 shortage is Micron's own forecast, and a company that sells scarce chips has every reason to describe the shortage as lasting. Micron's remarks centred on AI data centres, and the coverage we found said nothing about phone or laptop prices.
+
+Our read: if memory is the bottleneck, expect it to show up in the cost of the things built on it. Nothing to do today, but if you're planning to buy a laptop or phone, don't count on prices easing soon.
+
+Source: Micron fiscal Q4 2026 results release and earnings call; The Register, September 30 to October 1 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#AI #TechNews #Micron #AIChips #Memory #ArtificialIntelligence #TheAIDesk
