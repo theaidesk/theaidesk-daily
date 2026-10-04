@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-03",
+  "post": 2,
+  "theme": "Google AI Mode study: fewer clicks, lower satisfaction",
+  "status": "ready",
+  "platforms": [
+    "instagram",
+    "threads",
+    "x"
+  ],
+  "urls": {
+    "instagram": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-03/post-2/instagram.jpg",
+    "x": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-03/post-2/x.jpg",
+    "threads": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-03/post-2/threads.jpg"
+  }
+}
