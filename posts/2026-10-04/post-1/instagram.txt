@@ -1,0 +1,15 @@
+If an algorithm flagged you, could your boss really fire you over it? In California, the answer just changed.
+
+On September 30, Governor Gavin Newsom signed SB 947, the No Robo Bosses Act. It says an AI system can't be the only basis for firing or disciplining a worker. A human has to check the decision, using things like personnel files and manager evaluations. And the worker gets written notice explaining what AI data was involved, plus a person they can ask about it.
+
+Some context. Newsom vetoed an earlier version in October 2025 over "overly broad pre-notification rules," and this revised bill dropped the advance-notice requirement. It's billed as the first law of its kind in the US. Gig workers were left out of the final version.
+
+The honest part: what counts as relying "primarily" on AI isn't defined tightly, and the Chamber of Progress says that vagueness could put employers off using useful tools. We also couldn't confirm when the law takes effect, so check before you assume it applies today.
+
+What it means for you: if you work in California and you're ever disciplined or let go, you have a new reason to ask whether software was involved, and who looked at it.
+
+Source: Sen. McNerney's office (SB 947 release), CNBC and Techstrong, September 30 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#AI #TechNews #AIandWork #California #Employment #ArtificialIntelligence #TheAIDesk

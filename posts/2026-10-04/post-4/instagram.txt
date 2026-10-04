@@ -1,0 +1,15 @@
+If you pay $200 a month for ChatGPT Pro, what you get now depends on when you signed up.
+
+On September 29, OpenAI added a $500 Pro plan and reopened the $200 one. The $500 plan is the only one with Ultrafast, a faster service tier for its GPT-6 Astra model. Pro 200 costs the same as before, but new subscribers now get a lower usage allowance. Anyone with an active Pro 200 plan between September 22 and 10am Pacific on September 29 keeps the old allowance until October 29, then moves to the lower one at the same price. There is also a $100 Pro plan.
+
+Here's the honest part. OpenAI hasn't published usage numbers. It only says Pro 200 includes more than Pro 100 and Pro 500 includes the most, so nobody outside the company can say how much less you now get. OpenAI points to its models getting more efficient, which is its own explanation, not an independent finding.
+
+One detail from OpenAI's help page: Astra Ultrafast uses up your allowance at 8 times the standard rate.
+
+What it means for you: if you're on Pro 200 and lean on the old allowance, mark October 29 in your calendar and watch your usage before you renew.
+
+Source: OpenAI Help Center, "About ChatGPT Pro tiers", and OpenAI release notes, September 29 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#AI #TechNews #OpenAI #ChatGPT #ChatGPTPro #ArtificialIntelligence #TheAIDesk
