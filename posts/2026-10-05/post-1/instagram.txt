@@ -1,0 +1,17 @@
+What happens when a city council asks the biggest AI companies to swear to their answers?
+
+New York City Council held a rare hearing today with all 51 members, and Anthropic, OpenAI, Google and Meta were set to testify under oath about the risks of AI.
+
+• Council wants the labs to explain how they will keep AI agents from going out of control
+• Each company is sending a senior policy or safety person
+• Council has also floated its own proposals on AI protections for New Yorkers
+
+The honest part: this is a hearing, not a law. The reporting we found was written before testimony started, so we can't tell you what was said or whether anything changes.
+
+What it means for you: cities and states are not waiting for Washington. What these companies say under oath can end up shaping rules that apply to the tools you use.
+
+Source: NYC Council, CNBC, October 5 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #aisafety #nyc #openai #anthropic #theaidesk

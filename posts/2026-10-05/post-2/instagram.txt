@@ -1,0 +1,17 @@
+A US state is asking a judge to stop an AI lab from building its next model.
+
+On September 28, Florida's attorney general asked a Highlands County court to bar OpenAI from developing new models without independent third-party safety approval. The 49-page motion is part of the state's child-harm lawsuit over ChatGPT, and it also asks the court to keep minors off the product.
+
+• Florida says it wants guardrails before more model work
+• OpenAI says it already paused training of its most capable models and will resume once extra safeguards are in place
+• Hearings on the request are expected in the county court
+
+The honest part: this is a request, not a ruling, and we found no decision yet. OpenAI's pause is the company's own statement, not an independent check.
+
+What it means for you: nothing changes in ChatGPT today. But states are now testing how far courts can go in shaping how AI is built.
+
+Source: Reuters and Engadget, September 28 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #openai #chatgpt #ailaw #theaidesk
