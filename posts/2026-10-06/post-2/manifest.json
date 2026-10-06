@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "post": 2,
+  "theme": "OpenAI to test visual ads during ChatGPT image generation in the US",
+  "day": 171,
+  "status": "ready",
+  "platforms": [
+    "instagram",
+    "x",
+    "threads"
+  ],
+  "dueAt": "2026-10-07T11:30:00Z",
+  "urls": {
+    "instagram": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-06/post-2/instagram.jpg",
+    "x": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-06/post-2/x.jpg",
+    "threads": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-06/post-2/threads.jpg"
+  }
+}

@@ -1,0 +1,17 @@
+Waiting for ChatGPT to draw your image? That wait is about to become ad space.
+
+OpenAI announced a new visual ad format that will start testing later this month in the US, with an initial group of advertisers. The ads appear while an image is being generated.
+
+• Ads are clearly labeled and stay separate from the image you asked for
+• Images in the ads can show a product, how it's used, or what a service makes possible
+• Advertisers also get new tools to track purchases, plus brand-safety checks meant to keep ads out of sensitive conversations
+
+The honest part: OpenAI says ads don't influence ChatGPT's answers. That's the company's own statement, and nobody outside has checked it. It's also a test, not a full rollout.
+
+What it means for you: if you use ChatGPT's image tool in the US, you may start seeing sponsored images in the wait. Nothing changes for you today.
+
+Source: OpenAI, October 5 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #openai #chatgpt #chatgptads #theaidesk
