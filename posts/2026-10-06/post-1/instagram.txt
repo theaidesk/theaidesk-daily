@@ -1,0 +1,17 @@
+What if the text ChatGPT writes for you carried a signature you can't see?
+
+OpenAI says that is coming to the EU. Over the next few weeks it will add an invisible watermark to ChatGPT and Codex text, to meet the EU AI Act rule that AI-written text be machine-identifiable.
+
+• The watermark sits in the model's word choices, a statistical pattern a detector can find. Nothing shows when you read or copy the text
+• OpenAI is also letting API customers opt in, and giving its detector to approved researchers first
+• In OpenAI's own test, swapping 10% of words for synonyms cut detection from about 92% to 66%. At 25% it fell to 17%
+
+The honest part: those are OpenAI's numbers, from its own evaluation. And no watermark found does not mean a human wrote it. Short, edited or translated text can slip through.
+
+What it means for you: if you're in the EU, text from these tools will be traceable in principle. In practice, light editing can wipe the signal.
+
+Source: OpenAI, October 5 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #openai #chatgpt #euaiact #theaidesk
