@@ -1,0 +1,17 @@
+Picture an AI assistant that shops for you. How does a store know it's really acting for you, and what is it allowed to do?
+
+Meta and Sierra just published an answer: the Personal Agent Protocol, an open standard for how personal AI agents sign in to businesses.
+
+• It builds on OAuth, the same "sign in with..." technology you already use. An agent can browse as a guest, such as checking stock or a returns policy
+• Once you sign in, you choose whether it gets read-only or write access, and the session carries across channels
+• Walmart, Shopify, Stripe, Genesys and others are founding partners
+
+The honest part: this is an early proposal. The first draft of the spec is due this month, payments are listed as a future extension, and OpenAI and Anthropic are not among the named partners. A standard only matters if enough of the market adopts it.
+
+What it means for you: if it catches on, handing a task to an AI agent could work the way logging in does today, with you deciding what it can touch. Nothing changes for you yet.
+
+Source: Sierra and Meta, October 6 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #aiagents #meta #sierra #theaidesk

@@ -1,0 +1,18 @@
+Most countries rent their AI from a handful of US labs. South Korea wants to own one.
+
+The country's Ministry of Science and ICT plans to spend 4.7 trillion won, about US$3.5 billion, on a state-led frontier AI model. Work is due to start in March 2027.
+
+• The government would put in direct equity, with private money alongside
+• More than 80% of the budget, 3.9 trillion won, is earmarked for 10,000 Nvidia GPUs
+• A lead developer is chosen by competitive tender, open to single companies, consortiums or special-purpose vehicles
+• The stated aim is less dependence on foreign AI models
+
+The honest part: this is a plan, not a spent budget. Parliament still has to approve the 2027 budget in December, and no developer has been picked yet.
+
+What it means for you: if you live outside the US or China, expect more governments to fund their own models, and to spend most of it on chips.
+
+Source: Korea's Ministry of Science and ICT, October 5 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #southkorea #nvidia #sovereignai #theaidesk
