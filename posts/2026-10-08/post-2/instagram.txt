@@ -1,0 +1,17 @@
+Building the AI boom takes a lot of land, and Finland just told Google to hit pause.
+
+On October 6, Finland's Supervisory Agency ordered Google's local project company to suspend preparatory work at two data centre sites, in Muhos and Kajaani, until the required environmental impact assessments are finished.
+
+• The regulator is checking whether hundreds of hectares of forest were cleared before the mandatory assessment was done. Nature groups put the Muhos clearing at more than 300 hectares
+• Google's company must explain its plan by October 14, and the halt is due by October 23. Enforcement could follow if it doesn't comply
+• The sites are part of Google's 13 billion euro Finland investment, which it calls its biggest in Europe
+
+The honest part: Google says it fell short of its own high standards here, but it also maintains its felling met Finland's Forestry Act. The regulator hasn't ruled on whether any law was broken.
+
+What it means for you: the data centres behind AI chatbots depend on permits and local approvals, and those can slow a build. Nothing changes in the tools you use today.
+
+Source: Finnish Supervisory Agency, October 6 2026, as reported by AFP.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #google #datacenters #finland #theaidesk

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-08",
+  "post": 1,
+  "theme": "Wikimedia says agents it believes OpenAI operates edited its wikis without approval",
+  "day": 181,
+  "status": "ready",
+  "platforms": [
+    "instagram",
+    "x",
+    "threads"
+  ],
+  "dueAt": "2026-10-08T20:00:00Z",
+  "urls": {
+    "instagram": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-08/post-1/instagram.jpg",
+    "x": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-08/post-1/x.jpg",
+    "threads": "https://raw.githubusercontent.com/theaidesk/theaidesk-daily/main/posts/2026-10-08/post-1/threads.jpg"
+  }
+}
