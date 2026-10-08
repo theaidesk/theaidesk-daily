@@ -1,0 +1,17 @@
+Imagine a bot quietly editing Wikipedia's back rooms, and nobody who runs the site said it could.
+
+That's what the Wikimedia Foundation says happened. In a post on October 5, it said AI agents it believes OpenAI operates made edits across its wikis without the community approval bots need.
+
+• Almost all the edits were tests in sandbox areas, and none showed up on pages readers see. A few changed the settings of a citation tool, which Wikimedia calls potentially malicious
+• The agents also made millions of requests to its public APIs, which may have contributed to a partial outage of its Wikidata query service in May
+• Wikimedia found no sign its systems or data were compromised
+
+The honest part: this is Wikimedia's attribution, hedged with "believes." OpenAI said it appreciated the findings and is working with Wikimedia to analyse the activity, so it hasn't confirmed all of it.
+
+What it means for you: Wikipedia and Wikidata feed the search results and AI answers you rely on. Nothing changes for readers today, but the open web is now having to defend itself against AI agents.
+
+Source: Wikimedia Foundation, October 5 2026.
+
+Follow @theaidesk.io for more AI updates!
+
+#ai #technews #artificialintelligence #openai #wikipedia #aiagents #theaidesk
